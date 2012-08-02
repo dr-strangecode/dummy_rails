@@ -33,7 +33,15 @@ task :staging do
   set :rails_env, 'staging'
   set :branch, 'staging'
   role :web, "app.changeme.com"
-  role :app, "app.changeme.com"              
+  role :app, "app.changeme.com"
+  role :db,  "app.changeme.com", :primary => true
+end
+
+task :production do
+  set :rails_env, 'production'
+  set :branch, 'production'
+  role :web, "app.changeme.com"
+  role :app, "app.changeme.com"
   role :db,  "app.changeme.com", :primary => true
 end
 
