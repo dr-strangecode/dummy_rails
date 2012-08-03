@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.14'
 
-gem 'sqlite3'
+gem 'mysql2', '~> 0.2.6'
 
 
 group :development do
@@ -10,6 +10,9 @@ group :development do
 end
 
 group :development, :test do
+end
+
+group :test do
   gem 'cucumber-rails'
   gem 'rspec-rails'
 end
