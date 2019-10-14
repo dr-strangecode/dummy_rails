@@ -63,7 +63,7 @@ GEM
       json (>= 1.4.6)
     highline (1.6.13)
     i18n (0.5.0)
-    json (1.7.4)
+    json (1.8.6)
     libwebsocket (0.1.5)
       addressable
     mail (2.2.19)
